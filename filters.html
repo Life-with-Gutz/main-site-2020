@@ -1,13 +1,13 @@
 <div class="filters">
   <ol class="list-group-inline">
     <li>
-      <a class="gutter-1-8" href="/">Categories</a><span> /</span>
+      <a class="gutter-1-8" href="{{site.baseurl}}/">Categories</a><span> /</span>
     </li>
     <li>
-      <a class="gutter-1-8" href="/shop/"> </a><span> /</span>
+      <a class="gutter-1-8" href="{{site.baseurl}}/shop/"> </a><span> /</span>
     </li>
     <li>
-      <a class="gutter-1-8" href="/shop/#{{include.shop-category}}"> {{include.shop-category | capitalize }}</a><span> /</span>
+      <a class="gutter-1-8" href="{{site.baseurl}}/shop/#{{include.shop-category}}"> {{include.shop-category | capitalize }}</a><span> /</span>
     </li>
     <li>
       <a class="current gutter-1-8" href="#"> {{include.product}}</a>

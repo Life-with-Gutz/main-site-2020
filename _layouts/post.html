@@ -3,26 +3,26 @@ layout: default
 ---
 <div class="pg-top">
   <div class="push-2 pad-b-2">
-    <div class="banner-post img-loader" style="background-image: url({{page.img}}); ">
-      <img class="bg-shape-post-1" src="/images/bg-shapes/post-1.png" role="presentation">
+    <div class="banner-post img-loader" style="background-image: url({{site.baseurl}}{{page.img}}); ">
+      <img class="bg-shape-post-1" src="{{site.baseurl}}/images/bg-shapes/post-1.png" role="presentation">
     </div>
     <div class="edges2 grid push-2 pad-t-2">
       <div class="unit xs-1 l-1-4">
         <h1 class="push-1-2 yotta">{{page.title}}</h1>
         <h2 class="push-1-4">Date: {{page.write-date}}</h2>
-        <h3 class="light mega push-1-2 cat-list-post">Categories: {% for category in page.categories %}<a class="f-second normal" href="/blog/{{category}}/">{{category | capitalize }}</a>{% endfor %}</h3>
+        <h3 class="light mega push-1-2 cat-list-post">Categories: {% for category in page.categories %}<a class="f-second normal" href="{{site.baseurl}}/blog/{{category}}/">{{category | capitalize }}</a>{% endfor %}</h3>
         {% if page.youtube %}
           {% include btn-yt.html link=page.youtube %}
         {% endif %}
       </div>
       <div class="unit xs-1 l-3-4 gutter-1-2">
         <p class="mega">{{content}}</p>
-        <img class="gutz pad-t" src="/images/-gutz.svg" alt="Signed, Gutz">
+        <img class="gutz pad-t" src="{{site.baseurl}}/images/-gutz.svg" alt="Signed, Gutz">
       </div>
     </div>
     <div class="edges2 grid push-2 pad-t-2 animate-in">
       <div class="unit xs-1 l-1-4 push pad-b-2">
-        <a class="f-second zetta" href="/blog/">< Back to blog list</a>
+        <a class="f-second zetta" href="{{site.baseurl}}/blog/">< Back to blog list</a>
       </div>
       <div class="unit xs-1 l-3-4 gutter-1-2">
         <h4 class="f-second zetta normal">More like this!</h4>
@@ -50,5 +50,5 @@ layout: default
     </div>
   </div>
 </div>
-<img class="behind bg-shape-post-mid-1" src="/images/bg-shapes/post-2.svg" role="presentation">
-<img class="behind bg-shape-post-mid-2" src="/images/bg-shapes/post-3.svg" role="presentation">
+<img class="behind bg-shape-post-mid-1" src="{{site.baseurl}}/images/bg-shapes/post-2.svg" role="presentation">
+<img class="behind bg-shape-post-mid-2" src="{{site.baseurl}}/images/bg-shapes/post-3.svg" role="presentation">
