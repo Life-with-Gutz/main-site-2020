@@ -1,2 +1,12 @@
-@import "test";
-@import "mer";
+@import "_baseline-css/modules";
+@import "_baseline-css/grid";
+@import "_baseline-css/type";
+@import "_baseline-css/theme";
+@import "_patterns/header";
+@import "_patterns/footer";
+@import "_patterns/socials-fixed";
+@import "_patterns/btns";
+@import "_patterns/forms";
+@import "_patterns/index";
+@import "_patterns/blog";
+@import "_patterns/about-contact";

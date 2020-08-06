@@ -1,0 +1,32 @@
+<header class="header edges no-js">
+  <div class="grid grid-bottom">
+    <div class="unit xs-1 m-1 l-1-3">
+      <a href="/">
+        <img class="logo" src="/images/logo.svg" alt="Life with Gutz Logo">
+      </a>
+    </div>
+    <div class="menu unit xs-1 m-1 l-1-3 unit-offset-l-1-3 grid-bottom-align relative">
+      <a class="navtoggle" href="#nav">
+        <div class="first">
+        </div>
+        <div class="second">
+        </div>
+        <div class="third">
+        </div>
+      </a>
+      <nav class="relative" role="navigation" id="nav">
+        <ul class="header-nav tera" id="menu">
+          <li class="push-1-2 {% if page.url contains 'blog' %}current{% endif %}">
+            <a class="kilo" href="/blog/">BLOG</a>
+          </li>
+          <li class="push-1-2 {% if page.url contains 'about' %}current{% endif %}">
+            <a class="kilo" href="/about/">ABOUT</a>
+          </li>
+          <li class="push-1-2 {% if page.url contains 'contact' %}current{% endif %}">
+            <a class="kilo" href="/contact/">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

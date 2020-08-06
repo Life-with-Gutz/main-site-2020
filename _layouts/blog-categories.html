@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="pg-top">
+  <div class="push-2 pad-b-2">
+    <div class="relative push-2 bg-prim">
+      <h1 class="f-sp white pad-t-2 text-center nina">Blog</h1>
+      <img class="behind bg-shape-blog-1" src="/images/bg-shapes/blog-1.svg" role="presentation">
+      {% include blog-filters.html %}
+    </div>
+
+    <div class="edges2 push-2">
+      {% for post in site.categories[page.category] %}
+        {% include blog-preview.html img=post.img %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<img class="behind bg-shape-blog-mid-1" src="/images/bg-shapes/blog-3.svg" role="presentation">

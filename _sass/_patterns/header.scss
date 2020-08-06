@@ -1,0 +1,170 @@
+.header {
+  background-color: var(--color-white);
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.grid-bottom-align {
+  padding-bottom: .5rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .logo {
+    margin: 0;
+  }
+
+}
+
+/* burger stuff */
+
+.header-nav {
+  display: none;
+}
+
+.navtoggle {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  transition: all .3s ease;
+  background-color: var(--color-white);
+  display: inline-block;
+}
+
+.navtoggle div {
+  position: absolute;
+  left: 5px;
+  height: 4px;
+  width: 40px;
+  transition: all .3s ease;
+  background-color: var(--color-black);
+}
+
+.navtoggle .first {
+  top: 10px;
+}
+
+.navtoggle .second {
+  top: 25px;
+}
+
+.navtoggle .third {
+  top: 40px;
+}
+
+// open nav
+
+.open {
+  transition: all .2s ease;
+}
+
+.open .first {
+  transform: translateY(15px) rotate(45deg);
+  transition: all .2s ease;
+}
+
+.open .second {
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.open .third {
+  transform: translateY(-15px) rotate(-45deg);
+  transition: all .2s ease;
+}
+
+.no-js .header-nav,
+.open .header-nav {
+  display: block;
+}
+
+.menu ul {
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .navtoggle {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    padding: 0;
+    transform: none;
+  }
+
+}
+
+/* Nav */
+
+.breadcrumbs a,
+.header-nav a,
+.footer-nav a,
+.page-numbers a {
+  text-decoration: none;
+}
+
+.current {
+  color: var(--color-primary-dark);
+}
+
+.search-bar i {
+  color: var(--color-black);
+}
+
+.cart-amount {
+  color: var(--color-primary-dark);
+  font-family: var(--font-primary);
+}
+
+.header-nav a {
+  font-family: var(--font-secondary);
+  color: var(--color-black);
+  transition: all .3s ease;
+}
+
+.header-nav a:hover {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary-light);
+}
+
+.header-nav > li {
+  display: block;
+  text-align: center;
+}
+
+ul > li::before {
+  content: none;
+}
+
+.header-nav {
+  position: relative;
+  margin: 0;
+}
+
+.footer-nav a {
+  transition: all .3s linear;
+}
+
+.footer-nav a:hover {
+  color: var(--color-primary-dark);
+}
+
+.current a {
+  border-bottom: 3px solid var(--color-primary);
+}

@@ -1,0 +1,27 @@
+<div class="more-from-blog pad-t-2 push-2 pad-b-2">
+  <img class="behind bg-shape-index-mid-1" src="/images/bg-shapes/index-2.1.svg" role="presentation">
+  <img class="behind bg-shape-index-mid-2" src="/images/bg-shapes/index-2.2.svg" role="presentation">
+  <div class="edges2">
+    <h2 class="center-text text-upper pad-b">More from the blog</h2>
+    <div class="grid grid-stretch pad-b">
+      {% for post in site.posts offset:1 %}
+        <div class="unit unit-content-distribute xs-1 m-1-2 l-1-3 gutter push-2">
+          {% include img.html img=post.img alt=post.img-alt %}
+          <h3 class="pad-t text-upper normal content-fill">{{post.title}}</h3>
+          <p class="more-blog-p">{{ post.content | truncate: 250 }}</p>
+          {% include btn-light.html class="center-text" link=post.url btn="See full post" %}
+        </div>
+        {%- capture num -%}
+          {{ num | plus:1 }}
+        {%- endcapture -%}
+        {% if num == '3' %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      </div>
+      <div class="center-text">
+        {% include btn-light.html class="giga" link="/blog/" btn="See all blog posts" %}
+      </div>
+    </div>
+  </div>
+</div>

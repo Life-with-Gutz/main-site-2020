@@ -1,0 +1,27 @@
+.socials-fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: all .5s cubic-bezier(.5,-0.81,.42,1.54);
+}
+
+.socials-fixed a {
+  color: var(--color-primary);
+  transition: all .5s ease;
+  margin-bottom: .25rem;
+}
+
+.socials-fixed a:hover {
+  color: var(--color-black);
+  transform: scale(1.1);
+}
+
+.socials-out {
+  transform: translate(5rem, -50%) scale(.7);
+}

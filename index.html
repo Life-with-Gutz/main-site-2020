@@ -1,20 +1,30 @@
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-  <meta charset="utf-8">
-  <title>poop</title>
-  <meta name="handheldfriendly" content="true">
-  <meta name="mobileoptimized" content="240">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-  <h1>pleh</h1>
-  <h1>pleh</h1>
-  <h1>pleh</h1>
-  <h1>pleh</h1>
-  <h1>pleh</h1>
-  <h1>pleh</h1>
-  <h2>pleh</h2>
-</body>
-</html>
+---
+layout: default
+title: Home
+footer-shape: index-3
+---
+<div class="pg-top">
+  <div class="push-2 pad-b-2">
+    <div class="banner relative push-2 img-loader">
+      <div class="banner-elements">
+        <h1 class="h1-index">WELCOME</h1>
+        <img class="bg-shape-index-1" src="/images/bg-shapes/index-1.png" role="presentation">
+      </div>
+    </div>
+    <div class="edges2 grid grid-middle push-2 pad-t-2 animate-in">
+      <img class="unit xs-1 l-1-4 im-gutz pad-b" src="/images/im-gutz.svg" alt="I'm Gutz.">
+      <p class="unit xs-1 l-3-4 mega f-second light push-0 pad-b">Nulla ac diam id sapien condimentum convallis. In condimentum nisi in dolor lobortis imperdiet. Proin eu blandit dolor. Curabitur ut velit lorem. Ut maximus fermentum mattis. Ut maximus fermentum mattis. Donec metus metus, cursus a nunc ac, convallis euismod nibh.</p>
+    </div>
+  </div>
+  <section class="edges2 push-2 pad-t-2 pad-b-2 animate-in">
+    {% for post in site.posts limit:1 %}
+      {% include blog-preview.html img=post.img %}
+    {% endfor %}
+  </section>
+  <section class="push-2 pad-t-2 pad-b-2 ">
+    {% include more-recent-blog.html %}
+  </section>
+  <section class="animate-in">
+    {% include email-subscription.html %}
+  </section>
+</div>

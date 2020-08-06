@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="pg-top">
+  <div class="push-2 pad-b-2">
+    <div class="banner-post img-loader" style="background-image: url({{page.img}}); ">
+      <img class="bg-shape-post-1" src="/images/bg-shapes/post-1.png" role="presentation">
+    </div>
+    <div class="edges2 grid push-2 pad-t-2">
+      <div class="unit xs-1 l-1-4">
+        <h1 class="push-1-2 yotta">{{page.title}}</h1>
+        <h2 class="push-1-4">Date: {{page.write-date}}</h2>
+        <h3 class="light mega push-1-2 cat-list-post">Categories: {% for category in page.categories %}<a class="f-second normal" href="/blog/{{category}}/">{{category | capitalize }}</a>{% endfor %}</h3>
+        {% if page.youtube %}
+          {% include btn-yt.html link=page.youtube %}
+        {% endif %}
+      </div>
+      <div class="unit xs-1 l-3-4 gutter-1-2">
+        <p class="mega">{{content}}</p>
+        <img class="gutz pad-t" src="/images/-gutz.svg" alt="Signed, Gutz">
+      </div>
+    </div>
+    <div class="edges2 grid push-2 pad-t-2 animate-in">
+      <div class="unit xs-1 l-1-4 push pad-b-2">
+        <a class="f-second zetta" href="/blog/">< Back to blog list</a>
+      </div>
+      <div class="unit xs-1 l-3-4 gutter-1-2">
+        <h4 class="f-second zetta normal">More like this!</h4>
+        <div class="grid grid-stretch">
+          {% assign num = 0 %}
+          {% for post in site.posts %}
+            {% if page.title != post.title %}
+              <div class="unit unit-content-distribute xs-1 l-1-3 gutter push-2">
+                <div class="push">
+                  {% include img.html img=post.img alt=post.img-alt %}
+                </div>
+                <h5 class="light exa content-fill">{{post.title}}</h5>
+                {% include btn.html class="mega img-flex text-center" link=post.url btn="See full post" %}
+              </div>
+              {%- capture num -%}
+                {{ num | plus:1 }}
+              {%- endcapture -%}
+              {% if num == '3' %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img class="behind bg-shape-post-mid-1" src="/images/bg-shapes/post-2.svg" role="presentation">
+<img class="behind bg-shape-post-mid-2" src="/images/bg-shapes/post-3.svg" role="presentation">

@@ -1,0 +1,65 @@
+select,
+input,
+textarea {
+  border-color: var(--color-primary);
+  border-radius: 20px;
+}
+
+select,
+input {
+  height: 2rem;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  border-color: var(--color-primary);
+  border-radius: 50px;
+}
+
+.search::placeholder {
+  font-family: var(--font-primary);
+}
+
+label {
+  font-size: 1.1385rem;
+  line-height: 1.625rem;
+}
+
+input:not([type="checkbox"]).search, input:not([type="radio"]).search {
+  padding-left: 1.75rem;
+}
+
+/* Error Messages */
+
+.flag-optional,
+::placeholder,
+input[type="date"],
+select {
+  color: var(--color-primary);
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before,
+.is-validated:invalid,
+.is-validated[type="checkbox"]:invalid + label::before {
+  border-color: var(--color-black);
+}
+
+.error-message {
+  display: none;
+  background-color: var(--color-primary-light);
+  border-radius: 30px;
+  color: var(--color-primary);
+}
+
+.error-message-highlighted {
+  background-color: var(--color-primary-light);
+}
+
+.is-validated .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message,
+.is-validated:invalid + .error-message,
+.is-validated:invalid + label + .error-message {
+  display: block;
+}

@@ -1,0 +1,20 @@
+.gutter-3 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bg-shape-about-1 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(99%);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .gutter-3 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+}

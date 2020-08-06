@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} | {% endif %}Life with Gutz</title>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon-196.png">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@300;0,400;700&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+  <ul class="skip-links">
+  <li><a href="#nav">Jump to navigation</a></li>
+  <li><a href="#main">Jump to main content</a></li>
+  <li><a href="#footer">Jump to footer</a></li>
+</ul>
+  {% include header.html %}
+  <main id="main" role="main">
+    {{content}}
+    {% include socials-fixed.html %}
+  </main>
+  <div class="relative footer-space">
+    {% include footer.html %}
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.btn {
+  transition: all .3s ease;
+  font-family: var(--font-secondary);
+  border-radius: 40px;
+}
+
+.btn-main {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-main:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.btn-light {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-white);
+  transition: all .3s ease;
+
+}
+
+.btn-light:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-yt {
+  border-radius: 100%;
+  text-align: center;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: transparent;
+  padding: 1rem .5rem;
+  line-height: 1.4;
+}
+
+.btn-yt:hover {
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+  border-color: transparent;
+}
+
+.watch {
+  font-family: var(--font-special);
+}
