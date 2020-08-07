@@ -25,3 +25,20 @@
 .socials-out {
   transform: translate(5rem, -50%) scale(.7);
 }
+
+@media only screen and (max-height: 585px) {
+
+  .socials-fixed {
+    top: 100%;
+    transform: translateY(-105%);
+  }
+
+}
+
+@media only screen and (max-height: 455px) {
+
+  .socials-fixed {
+    visibility: hidden;
+  }
+
+}
