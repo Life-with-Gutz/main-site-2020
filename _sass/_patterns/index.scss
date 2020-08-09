@@ -19,13 +19,21 @@
 }
 
 .banner {
-  background-image: url("../images/banner-test.png");
+  background-image: url("../images/index-banner.jpg");
   background-color: var(--color-primary-light);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   align-items: center;
   min-height: 40vh;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+      background-position: center;
+  }
+
 }
 
 .banner-none {

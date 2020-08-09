@@ -90,6 +90,10 @@ a {
   text-decoration: none;
 }
 
+p a {
+  font-weight: bold;
+}
+
 a:hover {
   color: var(--color-black);
 }
