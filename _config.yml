@@ -3,6 +3,14 @@ sass:
   style: expanded
 
 collections:
+  - name: "website-settings"
+    label: "Website Settings"
+    files:
+      - label: "Website Settings"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+          
   posts:
     output: true
 defaults:

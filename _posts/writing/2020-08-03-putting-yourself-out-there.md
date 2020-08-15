@@ -2,7 +2,7 @@
 title: "Putting yourself OUT THERE"
 write-date: "August 3, 2020"
 categories: writing
-img: "/images/temp2.jpg"
+img: "/images/uploads/temp2.jpg"
 ---
 
 I love writing. When you're already a little, self-professed, "out there," there's no reason to keep it in, unless you want to. I have decided to share my weirdness with the world. Those in my life have a front seat to the freak show, but putting yourself and your content, whether written or visual, "out there," can be a little intimidating. What if no one likes me? What if people think I'm silly? What if?

@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: life-with-gutz/main-site-2020
+
+media_folder: "images/uploads"

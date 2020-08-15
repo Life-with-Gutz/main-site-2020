@@ -2,7 +2,7 @@
 title: "But we're all a little weird, aren't we?"
 write-date: "August 3, 2020"
 categories: flow
-img: "/images/temp2.jpg"
+img: "/images/uploads/temp2.jpg"
 img-alt: "A temporary image."
 youtube: "https://www.youtube.com/watch?v=NGKZECXwrE4"
 ---
