@@ -3,3 +3,14 @@ backend:
   repo: life-with-gutz/main-site-2020
 
 media_folder: "images/uploads"
+
+  - name: "website-settings"
+    label: "Website Settings"
+    files:
+      - label: "Website Settings"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+          - label: "Main Tagline"
+            name: "main-tagline"
+            widget: "string"

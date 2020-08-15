@@ -3,16 +3,6 @@ sass:
   style: expanded
 
 collections:
-  - name: "website-settings"
-    label: "Website Settings"
-    files:
-      - label: "Website Settings"
-        name: "site"
-        file: "_data/site.yml"
-        fields:
-          - label: "Main Tagline"
-            name: "main-tagline"
-            width: "string"
   posts:
     output: true
 defaults:
