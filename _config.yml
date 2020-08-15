@@ -10,7 +10,9 @@ collections:
         name: "site"
         file: "_data/site.yml"
         fields:
-          
+          - label: "Main Tagline"
+            name: "main-tagline"
+            width: "string"
   posts:
     output: true
 defaults:
