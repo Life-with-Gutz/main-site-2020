@@ -16,8 +16,9 @@ footer-shape: about-2
       </div>
       <div class="unit xs-1 l-1-2 gutter unit-pull-l-1-2">
         <h2 class="exa">Life with Gutz</h2>
-        <p>{{site.data.about.about.life-with-gutz}}</p>
-        <p class="micro">{{site.data.about.about.credit}}</p>
+        <div>
+          {{ site.data.about.about.life-with-gutz | markdownify }}
+        </div>
       </div>
     </div>
     <img class="img-flex behind" src="{{site.baseurl}}/images/bg-shapes/about-mid.svg" role="presentation">
@@ -27,7 +28,7 @@ footer-shape: about-2
       </div>
       <div class="unit xs-1 l-1-2 gutter">
         <h2 class="exa">Katie</h2>
-        <p>{{site.data.about.about.katie}}</p>
+        <p>{{site.data.about.about.katie | markdownify }}</p>
       </div>
     </div>
   </div>
