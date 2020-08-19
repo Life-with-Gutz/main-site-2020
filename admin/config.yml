@@ -8,7 +8,7 @@ collections:
   - name: "website-settings"
     label: "Website Settings"
     files:
-      - label: "Website Settings"
+      - label: "General Settings"
         name: "site"
         file: "_data/site.yml"
         fields:
@@ -19,6 +19,9 @@ collections:
             name: "index"
             widget: "object"
             fields:
+              - label: "Banner Image"
+                name: "banner-image"
+                widget: "string"
               - label: "Tagline"
                 name: "catch-line"
                 widget: "string"
