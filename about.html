@@ -12,22 +12,22 @@ footer-shape: about-2
     </div>
     <div class="edges2 grid grid-middle pad-t-2 animate-in">
       <div class="unit xs-1 l-1-2 gutter-3 unit-push-l-1-2 push-0">
-        {% include img.html img="/images/uploads/lwg-about-gutz.jpg" alt="Gutz holding a ring of fire and dressed in beautiful teal fairy wings, nighttime." %}
+        {% include img.html img=site.data.about.about.image-gutz alt=site.data.about.about.alt-gutz %}
       </div>
       <div class="unit xs-1 l-1-2 gutter unit-pull-l-1-2">
         <h2 class="exa">Life with Gutz</h2>
-        <p>{{site.data.site.about.life-with-gutz}}</p>
-        <p class="micro">Photograph by <a href="https://www.wbgphotography.com/Portfolio/Portfolio">Bill Gorham</a>.</p>
+        <p>{{site.data.about.about.life-with-gutz}}</p>
+        <p class="micro">{{site.data.about.about.credit}}</p>
       </div>
     </div>
     <img class="img-flex behind" src="{{site.baseurl}}/images/bg-shapes/about-mid.svg" role="presentation">
     <div class="edges2 grid grid-middle animate-in">
       <div class="unit xs-1 l-1-2 gutter-3">
-        {% include img.html img="/images/uploads/lwg-about-katie.jpg" alt="A headshot of Katie." %}
+        {% include img.html img=site.data.about.about.image-katie alt=site.data.about.about.alt-katie %}
       </div>
       <div class="unit xs-1 l-1-2 gutter">
         <h2 class="exa">Katie</h2>
-        <p>{{site.data.site.about.katie}}</p>
+        <p>{{site.data.about.about.katie}}</p>
       </div>
     </div>
   </div>

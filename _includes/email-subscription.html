@@ -1,11 +1,11 @@
 <div class="edges2 grid grid-middle push-0 pad-b-2">
   <div class="unit xs-1 l-1-2 unit-push-l-1-2 gutter-3 pad-t-2 push-2">
-    {% include img.html img="/images/uploads/email.jpg" alt="A temporary image." %}
+    {% include img.html img=site.data.multi.email.image alt=site.data.multi.email.alt %}
   </div>
   <div class="unit xs-1 l-1-2 unit-pull-l-1-2 gutter f-second normal">
-    <h2 class="exa">Balance Bitch</h2>
-    <p class="f-prim">Life is a constant balance. In his book, “The Power of Habit,” <a href="https://charlesduhigg.com/">Charles Duhigg</a> coins the term, “keystone habit,” to point to a select collection of habits that help us succeed in life. Journaling and planning have been keystone habits for me for years, helping me excel in my career as a <a href="https://www.linkedin.com/in/kathleengutzman/">video director/editor</a> and live <a href="https://www.youtube.com/watch?v=4alJ1MZSRP8">my best life</a>. I've used lots of different methods and planners over the years, but now I use one I've designed myself. Get your free printable download here. </p>
-    <p class="strong">Subscribe for free planner!</p>
+    <h2 class="exa">{{site.data.multi.email.title}}</h2>
+    <p class="f-prim">{{site.data.multi.email.para}}</p>
+    <p class="strong">{{site.data.multi.email.callout}}</p>
     {% include form-subscribe.html %}
   </div>
 </div>
