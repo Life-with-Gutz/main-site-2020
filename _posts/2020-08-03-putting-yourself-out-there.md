@@ -1,7 +1,7 @@
 ---
 title: "Putting yourself OUT THERE"
 write-date: "August 3, 2020"
-categories: writing
+categories: storytelling
 img: "/images/uploads/temp2.jpg"
 ---
 

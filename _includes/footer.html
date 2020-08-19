@@ -7,21 +7,21 @@
           <img class="w-1-2" src="{{site.baseurl}}/images/uploads/gutz-illustration.jpg" alt="Illustration of Gutz">
         </div>
         <div class="footer-left unit xs-1 m-1-3 unit-pull-m-1-3 push-1-2">
-          {% include social-icon.html icon-link="https://www.facebook.com/lifewithgutz" i-size="i-48" icon-img="facebook" %}
-          {% include social-icon.html icon-link="https://www.instagram.com/lifewithgutz/" i-size="i-48" icon-img="instagram" %}
-          {% include social-icon.html icon-link="https://www.youtube.com/KatieGutz" i-size="i-48" icon-img="youtube" %}
-          {% include social-icon.html icon-link="https://twitter.com/KatieGutz" i-size="i-48" icon-img="twitter" %}
+          {% include social-icon.html icon-link=site.data.site.socials.facebook i-size="i-48" icon-img="facebook" %}
+          {% include social-icon.html icon-link=site.data.site.socials.instagram i-size="i-48" icon-img="instagram" %}
+          {% include social-icon.html icon-link=site.data.site.socials.youtube i-size="i-48" icon-img="youtube" %}
+          {% include social-icon.html icon-link=site.data.site.socials.twitter i-size="i-48" icon-img="twitter" %}
         </div>
         <div class="footer-right unit xs-1 m-1-3 push-1-2">
-          {% include social-icon.html icon-link="https://www.tiktok.com/@lifewithgutz" i-size="i-48" icon-img="tiktok" %}
-          {% include social-icon.html icon-link="https://www.pinterest.ca/LifewithGutz/" i-size="i-48" icon-img="pinterest" %}
-          {% include social-icon.html icon-link="https://www.twitch.tv/lifewithgutz" i-size="i-48" icon-img="twitch" %}
-          {% include social-icon.html icon-link="https://www.linkedin.com/in/kathleengutzman/" i-size="i-48" icon-img="linked-in" %}
+          {% include social-icon.html icon-link=site.data.site.socials.tiktok i-size="i-48" icon-img="tiktok" %}
+          {% include social-icon.html icon-link=site.data.site.socials.pinterest i-size="i-48" icon-img="pinterest" %}
+          {% include social-icon.html icon-link=site.data.site.socials.twitch i-size="i-48" icon-img="twitch" %}
+          {% include social-icon.html icon-link=site.data.site.socials.linked-in i-size="i-48" icon-img="linked-in" %}
         </div>
       </div>
       <div class="footer-details micro grid grid-middle">
         <div class="unit xs-1-2 f2-left">
-          <p>Life with Gutz Copyright © 2020</p>
+          <p>Life with Gutz Copyright © {{ "now" | date: "%Y" }}</p>
         </div>
         <div class="unit xs-1-2 f2-right">
           <p>Website Design: <a class="white-text" href="https://hannahdel.ca">Hannah Delaney</a></p>
