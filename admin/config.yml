@@ -126,7 +126,7 @@ collections:
                 widget: "string"
               - label: "Paragraph"
                 name: "para"
-                widget: "string"
+                widget: "markdown"
               - label: "Call Out"
                 name: "callout"
                 widget: "string"
