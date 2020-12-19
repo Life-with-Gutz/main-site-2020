@@ -1,6 +1,7 @@
 backend:
   name: github
-  repo: life-with-gutz/main-site-2020
+  repo: Life-with-Gutz/main-site-2020
+  branch: master
 
 media_folder: "images/uploads"
 
