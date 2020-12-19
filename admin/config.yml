@@ -181,7 +181,7 @@ collections:
         widget: "hidden"
         default: "post"
       - label: "Image"
-        name: "image"
+        name: "img"
         widget: "image"
       - label: "Image Alt Text"
         name: "alt"
