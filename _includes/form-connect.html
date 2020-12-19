@@ -1,9 +1,9 @@
-<form method="post" action="#" novalidate>
+<form method="POST" action="https://formspree.io/f/moqppqdp" novalidate>
 
   <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
     <h4 class="push-0">
       <i class="icon i-32">
-        <svg><use xlink:href="{{site.baseurl}}/images/warning-icon.svg" /></svg>
+        <img src="/images/warning-icon.svg" alt="Warning icon."></i>
       </i>
       <span class="icon-label f-second normal">Whoops! There is something missing. Please fill in the required fields.</span>
     </h4>
@@ -12,25 +12,25 @@
 
   <div class="push-1-2">
     <label for="name"></label>
-    <input id="name" placeholder="  Full Name" required aria-describedby="name-error">
+    <input type="name" name="name" id="name" placeholder="  Full Name" required aria-describedby="name-error">
     <p class="error-message milli island-1-4 push-0" id="name-error">
-      <i class="icon i-16"><svg><use xlink:href="{{site.baseurl}}/images/warning-icon.svg" /></svg></i>
+      <i class="icon i-16"><img src="/images/warning-icon.svg" alt="Warning icon."></i>
       <span class="icon-label">Please provide a name.</span>
     </p>
   </div>
 
   <div class="push-1-2">
     <label for="email"></label>
-    <input type="email" id="email" placeholder="  Email" required aria-describedby="email-error">
+    <input type="email" name="email" id="email" placeholder="  Email" required aria-describedby="email-error">
     <p class="error-message milli island-1-4 push-0" id="email-error">
-      <i class="icon i-16"><svg><use xlink:href="{{site.baseurl}}/images/warning-icon.svg" /></svg></i>
+      <i class="icon i-16"><img src="/images/warning-icon.svg" alt="Warning icon."></i></i>
       <span class="icon-label">Please provide a properly formatted email address.</span>
     </p>
   </div>
 
   <div class="push-1-2">
     <label class="push-1-2" for="text-area"></label>
-    <textarea class="push-1-2" id="text-area" rows="3" placeholder="  Message"></textarea>
+    <textarea name="message" class="push-1-2" id="text-area" rows="3" placeholder="  Message" required></textarea>
   </div>
 
   <div>
