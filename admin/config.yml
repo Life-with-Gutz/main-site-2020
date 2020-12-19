@@ -200,6 +200,7 @@ collections:
         name: "youtube"
         widget: "string"
         hint: "If you have made a youtube video that reflects the same content as this post, you can put the url link here and a button that leads the reader right to the video will appear on the page."
+        required: false
       - label: "Body"
         name: "body"
         widget: "markdown"
