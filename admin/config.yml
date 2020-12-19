@@ -184,7 +184,7 @@ collections:
         name: "img"
         widget: "image"
       - label: "Image Alt Text"
-        name: "alt"
+        name: "img-alt"
         widget: "string"
         hint: "This text will display if for some reason a user's browser cannot display images."
       - label: "Title"
