@@ -2,10 +2,10 @@
   <div class="unit xs-1 l-1-2 unit-push-l-1-2 gutter-3 pad-t-2 push-2">
     {% include img.html img=site.data.multi.email.image alt=site.data.multi.email.alt %}
   </div>
-  <div class="unit xs-1 l-1-2 unit-pull-l-1-2 gutter f-second normal">
+  <div class="unit xs-1 l-1-2 unit-pull-l-1-2 gutter normal">
     <h2 class="exa">{{site.data.multi.email.title}}</h2>
-    <p class="f-prim">{{site.data.multi.email.para | markdownify }}</p>
-    <p class="strong">{{site.data.multi.email.callout}}</p>
+    <p class="f-second">{{site.data.multi.email.para | markdownify }}</p>
+    <p class="strong f-second">{{site.data.multi.email.callout}}</p>
     {% include form-subscribe.html %}
   </div>
 </div>
