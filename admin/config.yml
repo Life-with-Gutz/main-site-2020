@@ -40,7 +40,7 @@ collections:
                 name: "twitch"
                 widget: "string"
               - label: "LinkedIn Handle"
-                name: "linkedin"
+                name: "linked-in"
                 widget: "string"
   - name: "pages"
     label: "Pages"
