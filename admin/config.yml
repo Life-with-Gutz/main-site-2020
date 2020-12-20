@@ -59,7 +59,7 @@ collections:
               - label: "Welcome Line"
                 name: "welcome-line"
                 widget: "string"
-                hint: CAUTION: Be careful about changing this from the word "WELCOME", it could compromise the design.
+                hint: CAUTION. Be careful about changing this from the word "WELCOME", it could compromise the design.
               - label: "Tagline"
                 name: "tagline"
                 widget: "string"
