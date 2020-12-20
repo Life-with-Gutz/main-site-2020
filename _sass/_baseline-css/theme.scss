@@ -98,34 +98,6 @@ a:hover {
   color: var(--color-black);
 }
 
-// blockquote {
-//   font-family: var(--font-secondary);
-//   color: var(--color-primary);
-//   font-weight: normal;
-// }
-//
-// cite {
-//   font-family: var(--font-special);
-//   color: var(--color-primary);
-// }
-//
-// q {
-//   font-family: var(--font-secondary);
-//   color: var(--color-primary);
-// }
-//
-// strong {
-//   font-family: var(--font-secondary);
-// }
-//
-// dfn {
-//   font-family: var(--font-secondary);
-// }
-//
-// mark {
-//   background: var(--color-primary-light);
-// }
-
 ::selection {
   background-color: var(--color-secondary);
   color: var(--color-primary);
@@ -180,13 +152,13 @@ table {
 
 }
 
-@media only screen and (min-width: 54em) {
-
-  .pg-top {
-    padding-top: 3.5rem;
-  }
-
-}
+// @media only screen and (min-width: 54em) {
+//
+//   .pg-top {
+//     padding-top: 3.5rem;
+//   }
+//
+// }
 
 @media only screen and (min-width: 60em) {
 
